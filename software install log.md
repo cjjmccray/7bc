@@ -5,6 +5,11 @@
     * [this discussion](http://serverfault.com/questions/562875/samba-default-file-creation-mask-calculation) explains to comment-out/remove create mask and use force create mask
     * [and this discussion](https://lists.samba.org/archive/samba/2003-March/063429.html) mentions create mask and directory mask
     * [and a quick reminder of how file masks work numerically](http://www.computerhope.com/unix/uchmod.htm)
+  * Settings for /etc/samba/smb.conf
+    * `;   create mask = 0777`
+    * `force create mode = 0777`
+    * `force directory mode = 0777`
+
 2. Installed `geeknote`
   * which requires `python_setuptools`
   * see notes in magnentius install log
