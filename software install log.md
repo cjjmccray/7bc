@@ -60,7 +60,9 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
       * Run it as Administrator
       * The GPL licence display box is blank (either the text is missing or the font is wrong/borked)
       * Change the install location to: `C:\Program Files\GnuWin32` and create the `GnuWin32` folder there 
-   1. Download `CARDS.DLL` from my Google Drive and store in the GnuWin32 binary folder
+      * After install, move contents of the `GetGnuWin32` folder in the install folder up one level and remove `GetGnuWin32`
+   1. Download `CARDS.DLL` from my Google Drive and store in the `C:\Program Files\GnuWin32\bin` folder
+      * Add `C:\Program Files\GnuWin32\bin` to the `PATH`
 1. Changed default Windows "zoom" to 200% to assist usability for Dad
    * Slider is from 100%-200% in 25% increments
 1. Changed time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
