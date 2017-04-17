@@ -29,9 +29,12 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
       * go find manually from their FTP site
    1. Libre Office
       * 5.2.6 64-bit (latest "still" version)
+      * Help for offline use: English (GB), also 5.2.6
    1. Logitech K400 plus driver
       * tap trackpad = single-left-click disabled
       * two finger scrolling and pinch-zoom left enabled
       * bizarrely the configuration app is unusable if you zoom the resolution to 200%
  1. Changed default Windows "zoom" to 200% to assist usability for Dad
     * Slider is from 100%-200% in 25% increments
+ 1. Chamged time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
+    * And when setting up, I chose "UTC+0, Dublin, Lisbon, London", when you do this during BST it gets the time one hour out
