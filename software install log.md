@@ -67,6 +67,7 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
       * Interesting user interface glitch - have already changed the Windows "zoom" to 200% and the Environment Variables screen is off the bottom and you can't get at the "OK" and "Cancel" buttons - tab through, "OK" is first and press Enter
       * Finally check the cards games all work
         * Start Solitaire and change the settings to "Draw 1" card
+   1. Notepad++ 64-bit version
 1. Changed default Windows "zoom" to 200% to assist usability for Dad
    * Slider is from 100%-200% in 25% increments
 1. Changed time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
@@ -79,3 +80,4 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
 1. Back to the time - it reverted to UTC from BST
    * Have stopped it from automatically detecting the time zone, and forced a change by +1 hour then a sync with `uk.pool.ntp.org`
    * Strongly suspect Windows will write the UTC time into the system/BIOS when it shuts down then tomorrow will get the time 1 hour out again
+   * Worse - the hardware doesn't have a RTC, on restart the clock was still 2.54am (previous day shutdown time).  Need to research Windows start-up programs to force an NTP sync
