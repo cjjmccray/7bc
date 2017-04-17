@@ -1,3 +1,14 @@
+# TO-DO
+1. Living Room TV PC
+   1. configure Windows Explorer to connect Documents, Pictures, Music and Videos to appropriate shares on Rome
+      * leave Downloads and Desktop local
+      * check how I did this on the other machines - Desktop *might* be remote
+   1. write-up full IP list and assign a fixed-IP to this machine
+   1. think on whether to install VNC to allow tunnelling-in from outside
+      * though the broadband router is not playing ball at the moment to allow it to be configured
+      * also need to switch from TigerVNC to something that a) has >8 character passwords and b) operates over SSL
+      * then change the other machines to do the same
+
 ## Rome (`ROME`)
 ### Sat 04-Apr-2015
 1. Finally got samba config for all users to always `rwx/0777` all files on shared drive
