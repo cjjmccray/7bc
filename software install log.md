@@ -1,5 +1,8 @@
 # TO-DO
 1. Living Room TV PC
+   1. Use my Kitchen PC to experiment with on-start-up NTP set programs
+      * have to allow *massive* time differences from last time
+      * script you're using on the Raspberry Pi boxes might work on Windows with the right GnuWin32 programs
    1. write-up full IP list and assign a fixed-IP to this machine
    1. think on whether to install VNC to allow tunnelling-in from outside
       * though the broadband router is not playing ball at the moment to allow it to be configured
