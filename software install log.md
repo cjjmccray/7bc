@@ -76,3 +76,6 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
    * Now right-click each of Documents, Pictures, Music and Videos and got through their Properties, Location and set to the right places
    * When prompted to Move existing files, yes and skip any that already there (you're moving from a new machine to a lot of existing stuff)
    * Leave Downloads and Desktop local, though Desktop will have to have some things like Phone Book and Banking added
+1. Back to the time - it reverted to UTC from BST
+   * Have stopped it from automatically detecting the time zone, and forced a change by +1 hour then a sync with `uk.pool.ntp.org`
+   * Strongly suspect Windows will write the UTC time into the system/BIOS when it shuts down then tomorrow will get the time 1 hour out again
