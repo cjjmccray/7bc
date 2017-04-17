@@ -1,8 +1,5 @@
 # TO-DO
 1. Living Room TV PC
-   1. configure Windows Explorer to connect Documents, Pictures, Music and Videos to appropriate shares on Rome
-      * leave Downloads and Desktop local
-      * check how I did this on the other machines - Desktop *might* be remote
    1. write-up full IP list and assign a fixed-IP to this machine
    1. think on whether to install VNC to allow tunnelling-in from outside
       * though the broadband router is not playing ball at the moment to allow it to be configured
@@ -34,6 +31,8 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
 1. Added to `SENATE` workgroup though left using DHCP for everything
 1. Installed:
    1. Firefox
+      * Make sure Firefox is the default browser in Windows
+        * You get prompted by the installer, but Windows is sneaky and you get dropped into the Windows default app thing
       * Set homepage to: `https://www.google.co.uk`
       * Customised position of 'home' to the left of the address bar
       * GitHub announces itself as a possible search engine causing a little '+' sign to appear next to the magnifying glass in the Search bar
@@ -41,8 +40,10 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
         * Click again on the magnifying glass, click on 'Change Search Settings'
         * Unselect GitHub as an option (do not remove it otherwise the '+' will appear again)
    1. VLC 64-bit
-      * default/auto-detected download is 32-bit
-      * go find manually from their FTP site
+      * Default/auto-detected download is 32-bit
+      * Go find manually from their FTP site
+      * Make sure VLC is the default media player in Windows
+        * Go find the Windows default app thing
    1. Libre Office
       * 5.2.6 64-bit (latest "still" version)
       * Help for offline use: English (GB), also 5.2.6
@@ -50,7 +51,15 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
       * tap trackpad = single-left-click disabled
       * two finger scrolling and pinch-zoom left enabled
       * bizarrely the configuration app is unusable if you zoom the resolution to 200%
- 1. Changed default Windows "zoom" to 200% to assist usability for Dad
-    * Slider is from 100%-200% in 25% increments
- 1. Changed time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
-    * And when setting up, I chose "UTC+0, Dublin, Lisbon, London", when you do this during BST it gets the time one hour out
+   1. Games from old Windows XP/7/8
+      * Copy from Rome into 'obvious' folders on `C:\`
+      * `CARDS.DLL` is missing, though...
+1. Changed default Windows "zoom" to 200% to assist usability for Dad
+   * Slider is from 100%-200% in 25% increments
+1. Changed time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
+   * And when setting up, I chose "UTC+0, Dublin, Lisbon, London", when you do this during BST it gets the time one hour out
+1. Configure Windows Explorer to connect Documents, Pictures, Music and Videos to appropriate shares on Rome
+   * First browse through Windows Explorer to `ROME` and login as Dad and get Windows to save the credentials
+   * Now right-click each of Documents, Pictures, Music and Videos and got through their Properties, Location and set to the right places
+   * When prompted to Move existing files, yes and skip any that already there (you're moving from a new machine to a lot of existing stuff)
+   * Leave Downloads and Desktop local, though Desktop will have to have some things like Phone Book and Banking added
