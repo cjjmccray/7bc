@@ -65,6 +65,8 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
    1. Download `CARDS.DLL` from my Google Drive and store in the `C:\Program Files\GnuWin32\bin` folder
       * Add `C:\Program Files\GnuWin32\bin` to the `PATH`
       * Interesting user interface glitch - have already changed the Windows "zoom" to 200% and the Environment Variables screen is off the bottom and you can't get at the "OK" and "Cancel" buttons - tab through, "OK" is first and press Enter
+      * Finally check the cards games all work
+        * Start Solitaire and change the settings to "Draw 1" card
 1. Changed default Windows "zoom" to 200% to assist usability for Dad
    * Slider is from 100%-200% in 25% increments
 1. Changed time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
