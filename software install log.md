@@ -1,4 +1,4 @@
-## Rome (NETBIOS: `ROME`)
+## Rome (`ROME`)
 ### Sat 04-Apr-2015
 1. Finally got samba config for all users to always `rwx/0777` all files on shared drive
    * Trick is to not use create mask but force create mask and force directory mask
@@ -13,13 +13,14 @@
   * which requires `python_setuptools`
   * see notes in magnentius install log
 
-## Living Room TV PC (NETBIOS: `LIVING-RM-TV-PC`)
+## Living Room TV PC (`LIVING-RM-TV-PC`)
 ### Sun 16-Apr-2017
 First-time went through default configuration for Windows 10.  Turned off geo-location and some data reporting/leakage to Microsoft.  Enabled Windows Defender and let it scan (took 40 minutes)
 
 1. Removed docked icons from taskbar for:
    * Microsoft Edge
    * Microsoft Store
+1. Added to `SENATE` workgroup though left using DHCP for everything
 1. Installed:
    1. Firefox
       * Set homepage to: `https://www.google.co.uk`
