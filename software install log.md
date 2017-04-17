@@ -36,5 +36,5 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
       * bizarrely the configuration app is unusable if you zoom the resolution to 200%
  1. Changed default Windows "zoom" to 200% to assist usability for Dad
     * Slider is from 100%-200% in 25% increments
- 1. Chamged time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
+ 1. Changed time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
     * And when setting up, I chose "UTC+0, Dublin, Lisbon, London", when you do this during BST it gets the time one hour out
