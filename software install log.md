@@ -72,6 +72,8 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
       * Finally check the cards games all work
         * Start Solitaire and change the settings to "Draw 1" card
    1. Notepad++ 64-bit version
+   1. Session Manager plugin added to Firefox
+      * Go through the settings and switch off notification after update
 1. Changed default Windows "zoom" to 200% to assist usability for Dad
    * Slider is from 100%-200% in 25% increments
 1. Changed time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
