@@ -25,6 +25,10 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
    1. Firefox
       * Set homepage to: `https://www.google.co.uk`
       * Customised position of 'home' to the left of the address bar
+      * GitHub announces itself as a possible search engine causing a little '+' sign to appear next to the magnifying glass in the Search bar
+        * Click on it and 'Add GitHub'
+        * Click again on the magnifying glass, click on 'Change Search Settings'
+        * Unselect GitHub as an option (do not remove it otherwise the '+' will appear again)
    1. VLC 64-bit
       * default/auto-detected download is 32-bit
       * go find manually from their FTP site
