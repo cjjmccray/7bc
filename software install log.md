@@ -24,6 +24,7 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
 1. Installed:
    1. Firefox
       * Set homepage to: `https://www.google.co.uk`
+      * Customised position of 'home' to the left of the address bar
    1. VLC 64-bit
       * default/auto-detected download is 32-bit
       * go find manually from their FTP site
