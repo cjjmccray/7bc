@@ -3,6 +3,7 @@
    1. Use my Kitchen PC to experiment with on-start-up NTP set programs
       * have to allow *massive* time differences from last time
       * script you're using on the Raspberry Pi boxes might work on Windows with the right GnuWin32 programs
+      * hunt from [ideas in here](http://stackoverflow.com/questions/426071/how-can-i-sync-the-computers-clock-upon-startup)
    1. write-up full IP list and assign a fixed-IP to this machine
    1. think on whether to install VNC to allow tunnelling-in from outside
       * though the broadband router is not playing ball at the moment to allow it to be configured
