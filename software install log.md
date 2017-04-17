@@ -54,6 +54,13 @@ First-time went through default configuration for Windows 10.  Turned off geo-lo
    1. Games from old Windows XP/7/8
       * Copy from Rome into 'obvious' folders on `C:\`
       * `CARDS.DLL` is missing, though...
+   1. [7-Zip](http://7-zip.org/) 64-bit version
+   1. [GNU Utils](http://getgnuwin32.sourceforge.net/) 32-bit version
+      * Save the `GetGnuWin32.exe` application
+      * Run it as Administrator
+      * The GPL licence display box is blank (either the text is missing or the font is wrong/borked)
+      * Change the install location to: `C:\Program Files\GnuWin32` and create the `GnuWin32` folder there 
+   1. Download `CARDS.DLL` from my Google Drive and store in the GnuWin32 binary folder
 1. Changed default Windows "zoom" to 200% to assist usability for Dad
    * Slider is from 100%-200% in 25% increments
 1. Changed time to auto-update from `uk.pool.ntp.org` (was `time.windows.com`)
