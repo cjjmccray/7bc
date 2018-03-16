@@ -11,6 +11,16 @@
       * then change the other machines to do the same
 
 ## Rome (`ROME`)
+### Fri 16-Mar-2018
+#### ntp
+Power lost at the start of March (cold weather, power cut in the area for a few minutes). Once power returned, the clock reset to 01-Jan-1970. This has a weird side-effect, any files saved from a Windows machine through to this file server gets a date/time stamp that the Windows machine cannot understand - or that Samba doesn't return (you end up with blank space in the display in Windows explorer).
+
+Getting ntpd to run at boot is easy - and I think happens out of the box, just enable the execute flag on ```/etc/rc.d/rc.ntpd``` and make sure there's some servers specified in ```/etc/ntp.conf```.  But... this won't work as the daemon runs in the background and monitors the time all the time, and will adjust it as the clock shifts.  When it reboots and the date/time is 1st Jan 1970, the difference/offset is too great and it won't set the time correctly.
+
+So... to fix this, before starting ```ntpd```, run ```ntpdate``` first to force the clock to be corrected, then start ```ntpd```.  Modify ```/etc/rc.d/rc.ntpd``` and I've added a special ```ntp_start1()``` section that calls the ```ntp_stop()``` section first to ensure the daemon isn't running, then waits a second, then runs ```ntp_date``` to set the clock correctly.  Finally run the ```ntp_start()``` section to start the daemon as normal.
+
+Change the default behaviour of ```rc.ntpd``` and the behaviour if 'start' is passed as a command-line prompt to both use the new ```ntp_start1()``` section and away you go, the time is set correctly whenever the machine restarts, even from a loss of power.  I did try adding just ```ntpdate``` to ```rc.local``` but... it must be called after the daemon is running as nothing happens.  Change to ```rc.local``` reverted.
+
 ### Sat 04-Apr-2015
 1. Finally got samba config for all users to always `rwx/0777` all files on shared drive
    * Trick is to not use create mask but force create mask and force directory mask
@@ -24,6 +34,16 @@
 1. Installed `geeknote`
   * which requires `python_setuptools`
   * see notes in magnentius install log
+
+### 29-Dec-2014
+#### rc.local - noip
+Created ```rc.local``` to allow noip2 to run.  Following instructions from [noip.com](noip.com) website and script sample in: ```/usr/local/src/noip-2.1.9-1/README.FIRST```.
+
+#### rc.local - killproc line
+Line from noip or already in ```rc.local``` has:
+* ```. /etc/rc.d/init.d/functions  # uncomment/modify for your killproc```
+it isn't needed so is commented out
+
 
 ## Living Room TV PC (`LIVING-RM-TV-PC`)
 ### Sun 16-Apr-2017
