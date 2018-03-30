@@ -10,6 +10,13 @@
       * also need to switch from TigerVNC to something that a) has >8 character passwords and b) operates over SSL
       * then change the other machines to do the same
 
+## New Laptop (Lenovo X230)
+Getting VNC over SSH to work...
+- install [Cygwin](https://cygwin.com/install.html)
+- install Open SSH
+- run Cygwin as Administrator
+  - ssh-host-config
+
 ## Rome (`ROME`)
 ### Fri 16-Mar-2018
 #### ntp
