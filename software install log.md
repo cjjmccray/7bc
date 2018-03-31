@@ -11,9 +11,10 @@
       * then change the other machines to do the same
 
 ## New Laptop (Lenovo X230)
-31-Mar-2018: 1630 - On train to Newport (1630 MAN - NWP 1934), battery been in use 10 minutes from full charge and reporting as 3hrs 38mins to go (92%)
-31-Mar-2018: 1645 - been editing this Github page over the EE box wifi (needed Evernote and the train wifi is unsecured, and Evernote refuses to allow the connection - this is an interesting piece of learning about Evernote by the way...), so battery been in use about 25 minutes from full charge and is reporting as 4hrs 47mins to go (88%)... or in sum: this is a *cool* laptop, especially now all the Lenovo drivers and stuff are installed and the touchpad is working OK.
-31-Mar-2018: 1755 - been browsing & reading, nothing too strenuous, still 3hrs 39mins (65%) remaining.
+- 31-Mar-2018: 1630 - On train to Newport (1630 MAN - NWP 1934), battery been in use 10 minutes from full charge and reporting as 3h 38m to go (92%)
+- 31-Mar-2018: 1645 - been editing this Github page over the EE box wifi (needed Evernote and the train wifi is unsecured, and Evernote refuses to allow the connection - this is an interesting piece of learning about Evernote by the way...), so battery been in use about 25 minutes from full charge and is reporting as 4h 47m to go (88%)... or in sum: this is a *cool* laptop, especially now all the Lenovo drivers and stuff are installed and the touchpad is working OK.
+- 31-Mar-2018: 1755 - been browsing & reading, nothing too strenuous, still 3h 39m (65%) remaining.
+- 31-Mar-2018: 1836 - watched 8m video clip online, more browsing, on and off the train wifi and the EE box, still 2h 33m (49%) remaining.
 
 Commissioning this for Dad:
 - screen size is small, will need to massively increase the size
