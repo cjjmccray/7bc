@@ -11,11 +11,25 @@
       * then change the other machines to do the same
 
 ## New Laptop (Lenovo X230)
+31-Mar-2018: 1630 - On train to Newport (1630 MAN - NWP 1934), battery been in use 10 minutes from full charge and reporting as 3hrs 38mins to go.
+31-Mar-2018: 1645 - been editing this Github page over the EE box wifi (needed Evernote and the train wifi is unsecured, and Evernote refuses to allow the connection - this is an interesting piece of learning about Evernote by the way...), so battery been in use about 25 minutes from full charge and is reporting as 4hrs 47mins to go... or in sum: this is a *cool* laptop, especially now all the Lenovo drivers and stuff are installed and the touchpad is working OK.
+
+Commissioning this for Dad:
+- screen size is small, will need to massively increase the size
+- magnifier possibly OK, though it tends to hover and get in the way
+- get him on Facebook annoying people
+- and stop both of their Facebook notifications from e-mailing them, it seriously pisses Mum off, and it'll drive him nuts too
+
 Getting VNC over SSH to work...
 - install [Cygwin](https://cygwin.com/install.html)
-- install Open SSH
+- install Open SSH, Open SSL and nano
 - run Cygwin as Administrator
-  - ssh-host-config
+  - ssh-host-config and follow your nose
+  - one or more of: [Gina Trapani's Life Hacker instructions from 2006](https://lifehacker.com/205090/geek-to-live--set-up-a-personal-home-ssh-server) (that really only need a little updating), [this](https://crl.ucsd.edu/handbook/vnc/), [this](https://helpdeskgeek.com/how-to/tunnel-vnc-over-ssh/), [this](https://wiki.centos.org/HowTos/Network/SecuringSSH), [this](https://superuser.com/questions/1032971/permission-denied-on-ssh-access-with-cygwin) and [this](https://dbaportal.eu/2015/03/05/installing-openssh-cygwin-1-7-35-on-windows-2012-r2/)
+  - basically use the hall PC as the proving and documenting ground for all of this
+  - [ports to open](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers): 22 (UDP and TCP in both directions), the "higher order" port, 259xx, again UDP and TCP in both directions
+  - I did get the laptop in the living room to connect to the Lenovo X230 on port 25933, though I have port 22 open for SSHD to respond on, though the session from the living room laptop was on port 25933 - ah, hang on, I have added a listener to TightVNC on port 25933 - so was the session from the laptop truly SSH secured?
+  - Re-run this by checking if 25933 is the open port through the router at 7BC - that might be what was in my head: connect on 25931 when inside the house and 25933 when outside so you could quickly administer access at a port level while leaving either internal or external open
 
 ## Rome (`ROME`)
 ### Fri 16-Mar-2018
