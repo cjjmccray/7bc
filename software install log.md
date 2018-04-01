@@ -10,19 +10,29 @@
       * also need to switch from TigerVNC to something that a) has >8 character passwords and b) operates over SSL
       * then change the other machines to do the same
 
-## New Laptop (Lenovo X230) (`DESKTOP-R0CBSLO`)
-- 31-Mar-2018: 1630 - On train to Newport (1630 MAN - NWP 1934), battery been in use 10 minutes from full charge and reporting as 3h 38m to go (92%)
+## New Laptop (Lenovo X230) (`LENOVO_X230`)
+### 02-Apr-2018 0020
+Renamed from `DESKTOP-R0CBSLO` to `LENOVO_X230`
+
+My Documents etc... redirection - see notes below...
+
+### 01-Apr-2018 1600
+Switched from DHCP to fixed IP: 192.168.1.9, netmask: 255.255.254.0, DNS: 192.168.0.2, 208.67.222.222 (Open DNS)
+
+### 31-Mar-2018 1630
+- On train to Newport (1630 MAN - NWP 1934), battery been in use 10 minutes from full charge and reporting as 3h 38m to go (92%)
 - 31-Mar-2018: 1645 - been editing this Github page over the EE box wifi (needed Evernote and the train wifi is unsecured, and Evernote refuses to allow the connection - this is an interesting piece of learning about Evernote by the way...), so battery been in use about 25 minutes from full charge and is reporting as 4h 47m to go (88%)... or in sum: this is a *cool* laptop, especially now all the Lenovo drivers and stuff are installed and the touchpad is working OK.
 - 31-Mar-2018: 1755 - been browsing & reading, nothing too strenuous, still 3h 39m (65%) remaining.
 - 31-Mar-2018: 1836 - watched 8m video clip online, more browsing, on and off the train wifi and the EE box, still 2h 33m (49%) remaining.
 
-Commissioning this for Dad:
+### Previously...
+#### Commissioning this for Dad:
 - screen size is small, will need to massively increase the size
 - magnifier possibly OK, though it tends to hover and get in the way
 - get him on Facebook annoying people
 - and stop both of their Facebook notifications from e-mailing them, it seriously pisses Mum off, and it'll drive him nuts too
 
-Getting VNC over SSH to work...
+#### Getting VNC over SSH to work...
 - install [Cygwin](https://cygwin.com/install.html)
 - install Open SSH, Open SSL and nano
 - run Cygwin as Administrator
@@ -32,6 +42,16 @@ Getting VNC over SSH to work...
   - [ports to open](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers): 22 (UDP and TCP in both directions), the "higher order" port, 259xx, again UDP and TCP in both directions
   - I did get the laptop in the living room to connect to the Lenovo X230 on port 25933, though I have port 22 open for SSHD to respond on, though the session from the living room laptop was on port 25933 - ah, hang on, I have added a listener to TightVNC on port 25933 - so was the session from the laptop truly SSH secured?
   - Re-run this by checking if 25933 is the open port through the router at 7BC - that might be what was in my head: connect on 25931 when inside the house and 25933 when outside so you could quickly administer access at a port level while leaving either internal or external open
+
+## Hall PC (`HALL_PC`)
+IP: 192.168.1.5, netmask: 255.255.254.0, DNS: 192.168.0.2, 208.67.222.222 (Open DNS)
+### Sun 01-Apr-2018
+Cygwin installed, SSH tunnelling configured, VNC-over-SSH enabled and tested from inside and outside.
+
+You still can connect by VNC over a non-encrypted tunnel, and the way you have to leave the non-encrypted port open on the route leads me to suspect once the SSH tunnel has logged-in and setup VNC, there's no real reason why the VNC session would stay encrypted.
+
+Notes/thoughts on this are in other Pastebin documents.
+
 
 ## Rome (`ROME`)
 ### Fri 16-Mar-2018
