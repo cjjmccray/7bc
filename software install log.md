@@ -10,7 +10,7 @@
       * also need to switch from TigerVNC to something that a) has >8 character passwords and b) operates over SSL
       * then change the other machines to do the same
 
-## New Laptop (Lenovo X230) (`LENOVO_X230`)
+## New Laptop (`LENOVO_X230`)
 ### 02-Apr-2018 0020
 #### Network Name
 Renamed from `DESKTOP-R0CBSLO` to `LENOVO_X230`
