@@ -12,15 +12,35 @@
 
 ## New Laptop (Lenovo X230) (`LENOVO_X230`)
 ### 02-Apr-2018 0020
+#### Network Name
 Renamed from `DESKTOP-R0CBSLO` to `LENOVO_X230`
 
+#### etc/hosts
 Added to `C:\Windows\System32\drivers\etc\hosts`:
 - 192.168.1.20  rome
 - 192.168.1.5   hall_pc
 
 Entry for `rome` was already there.
 
-My Documents etc... redirection - see notes below...
+#### Network Drive Mapping
+- Map `H:` to `\\rome\home_data`
+
+Do this for all three users (Chris, Howard, Sheila).
+
+#### Folder redirection
+- "Move" the following folders to the user's equivalents on `H:\Users\\<username\>\'`:
+- `Documents` to `My Documents`
+- `Music` to `My Music`
+- `Pictures` to `My Pictures`
+- `Videos` to `My Videos`
+
+Do this for all three users (Chris, Howard, Sheila).
+
+Then pin the following folders to the Quick Access menu in Windows Explorer:
+- `H:\Users\Howard\My Documents\Word\Howard\Medical\Malpas Brook Health Centre`
+- `H:\Users\Howard\My Documents\XL\Howard\Medical`
+
+Do this for users: Howard, Sheila.
 
 ### 01-Apr-2018 1600
 Switched from DHCP to fixed IP: 192.168.1.9, netmask: 255.255.254.0, DNS: 192.168.0.2, 208.67.222.222 (Open DNS)
