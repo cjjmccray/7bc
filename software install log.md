@@ -17,8 +17,8 @@ Renamed from `DESKTOP-R0CBSLO` to `LENOVO_X230`
 
 #### etc/hosts
 Added to `C:\Windows\System32\drivers\etc\hosts`:
-- 192.168.1.20  rome
-- 192.168.1.5   hall_pc
+- `192.168.1.20  rome`
+- `192.168.1.5   hall_pc`
 
 Entry for `rome` was already there.
 
@@ -41,6 +41,9 @@ Then pin the following folders to the Quick Access menu in Windows Explorer:
 - `H:\Users\Howard\My Documents\XL\Howard\Medical`
 
 Do this for users: Howard, Sheila.
+
+#### Screen Size (Howard only)
+Scaled to 200% (too big), 150% (also too big), settled on 125%.  If he has trouble, increase to 150% or 175%.
 
 ### 01-Apr-2018 1600
 Switched from DHCP to fixed IP: 192.168.1.9, netmask: 255.255.254.0, DNS: 192.168.0.2, 208.67.222.222 (Open DNS)
