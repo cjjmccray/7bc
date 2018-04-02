@@ -14,6 +14,12 @@
 ### 02-Apr-2018 0020
 Renamed from `DESKTOP-R0CBSLO` to `LENOVO_X230`
 
+Added to `C:\Windows\System32\drivers\etc\hosts`:
+- 192.168.1.20  rome
+- 192.168.1.5   hall_pc
+
+Entry for `rome` was already there.
+
 My Documents etc... redirection - see notes below...
 
 ### 01-Apr-2018 1600
