@@ -17,6 +17,12 @@
 *** do the same on the hall PC! ***
 
 ## New Laptop (`LENOVO_X230`)
+### 02-Apr-2018 1230
+#### Touchpd Clicking
+All three users - checked and removed clicking in the Synaptics Control Panel
+- General tab, Tapping section, "Tap to Click" switched off
+- Click tab, Clicks section, "Two Finger Click" switched off
+
 ### 02-Apr-2018 0020
 #### Network Name
 Renamed from `DESKTOP-R0CBSLO` to `LENOVO_X230`
