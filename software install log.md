@@ -9,6 +9,12 @@
       * though the broadband router is not playing ball at the moment to allow it to be configured
       * also need to switch from TigerVNC to something that a) has >8 character passwords and b) operates over SSL
       * then change the other machines to do the same
+1. Change your password at home
+   1. Windows clients use the same user and password as you've logged-in as
+   1. If you don't do the Documents, Music, Pictures and Video folder re-mapping (which maintain a connection on the network drive) you can get away with disconnecting and reconnecting with a different user+password combination
+   1. I've upgraded 7bc/rome/smb password for chrism to what I'm now using for login everywhere else
+
+*** do the same on the hall PC! ***
 
 ## New Laptop (`LENOVO_X230`)
 ### 02-Apr-2018 0020
