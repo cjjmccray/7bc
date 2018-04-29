@@ -95,6 +95,14 @@ Notes/thoughts on this are in other Pastebin documents.
 
 
 ## Rome (`ROME`)
+### Sun 29-Apr-2018
+#### Samba
+Unable to connect from Ubuntu on MPWS00250 laptop to 7bc/rome.  Added these lines to /etc/samba/smb.conf
+:`unix extensions = no`
+:`client min protocol = SMB2`
+:`client max protocol = SMB3`
+Details from [here](https://ubuntuforums.org/showthread.php?t=2361383) and [here](https://askubuntu.com/questions/890499/connection-timeout-on-windows-share-network).
+
 ### Fri 16-Mar-2018
 #### ntp
 Power lost at the start of March (cold weather, power cut in the area for a few minutes). Once power returned, the clock reset to 01-Jan-1970. This has a weird side-effect, any files saved from a Windows machine through to this file server gets a date/time stamp that the Windows machine cannot understand - or that Samba doesn't return (you end up with blank space in the display in Windows explorer).
